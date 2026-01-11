@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,700;1,700&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Kahve Sitesi</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+        <div class="container">
+            <a class="navbar-brand logo-wrapper" href="#">
+                <span class="logo-icon"><i class="fas fa-mug-hot"></i></span>
+                <span class="logo-text">COFFEE<span>HOUSE</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Our Story</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="d-none d-lg-block" style="width: 60px;"></div>
+            </div>
+
+            <a href="#menu" class="btn btn-coffee d-none d-lg-inline">
+                Order Now
+            </a>
+
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+
+    <section class="hero d-flex align-items-center justify-content-center text-center" id="home">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <h2 class="display-4 fw-bold text-white mb-3">Fresh Coffee, Warm Moments</h2>
+                    <h6 class="lead text-white-50 mb-4">Enjoy carefully selected coffee beans, brewed fresh every day in
+                        a cozy atmosphere.
+                    </h6>
+                    <button type="button" class="btn btn-coffee btn-lg">View Our Menu
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </section>
+
+    <!-- About Section -->
+    <section class="about py-5" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-5 mb-md-0">
+                    <div class="image-box">
+                        <img src="images/about-coffee.png" class="img-fluid rounded" alt="about-us">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="text-box ps-md-5">
+                        <h2 class="display-5 fw-bold mb-4">Our Journey</h2>
+                        <p class="lead mb-4">Since 1992, we've been dedicated to the art of coffee. We source our beans
+                            from sustainable farms and roast them to perfection.</p>
+                        <p class="mb-5">Each cup tells a story of passion, tradition, and the perfect aroma.</p>
+
+                        <div class="row g-4 border-top pt-4">
+                            <div class="col-6">
+                                <h3 class="fw-bold mb-0" style="color: var(--text-light);">100%</h3>
+                                <small class="text-uppercase fw-bold"
+                                    style="color: var(--primary-coffee); letter-spacing: 1px;">Organic Beans</small>
+                            </div>
+                            <div class="col-6">
+                                <h3 class="fw-bold mb-0" style="color: var(--text-light);">24/7</h3>
+                                <small class="text-uppercase fw-bold"
+                                    style="color: var(--primary-coffee); letter-spacing: 1px;">Fresh Roasted</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Why Choose Us -->
+    <section class="why-choose" id="why-choose">
+        <div class="container">
+            <div class="text-box mb-5">
+                <h2 class="display-5 fw-bold mb-3 text-white">Why Choose Us?</h2>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-3 col-sm-6">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="content">
+                                    <i class="fas fa-seedling mb-3"></i>
+                                    <h5 class="fw-bold">Fresh Coffee Every Day</h5>
+                                    <p>We prepare every cup using freshly roasted beans for authentic flavor.</p>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <img src="images/card1.png" alt="Coffee">
+                                <div class="back-overlay"><span>Fresh Beans</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="content">
+                                    <i class="fas fa-mug-hot mb-3"></i>
+                                    <h5 class="fw-bold">Cozy Atmosphere</h5>
+                                    <p>A warm space designed for comfort, conversation, and quality time.</p>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <img src="images/card2.png" alt="Atmosphere">
+                                <div class="back-overlay"><span>Warm Space</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="content">
+                                    <i class="fas fa-hand-holding-heart mb-3"></i>
+                                    <h5 class="fw-bold">Crafted with Care</h5>
+                                    <p>From brewing to serving, every detail is handled with passion.</p>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <img src="images/card3.png" alt="Craft">
+                                <div class="back-overlay"><span>With Passion</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="content">
+                                    <i class="fas fa-smile mb-3"></i>
+                                    <h5 class="fw-bold">Friendly Service</h5>
+                                    <p>Our team is always ready to welcome you with a warm smile.</p>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <img src="images/card4.png" alt="Service">
+                                <div class="back-overlay"><span>Service</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Featured Menu -->
+    <section class="menu-section py-5" id="menu">
+        <div class="container">
+            <div class="text-box mb-5">
+                <h2 class="display-5 fw-bold mb-3 text-white">Our Signature Menu</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-5 mb-4">
+                    <div class="menu-image-container">
+                        <img src="images/menu-main.png" alt="Special Coffee" class="img-fluid rounded-custom shadow-lg">
+                        <div class="image-badge">Since 1992</div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="menu-list">
+                        <div class="menu-item d-flex justify-content-between align-items-center mb-4">
+                            <div class="item-info">
+                                <h4 class="mb-1">Caffè Americano</h4>
+                                <p class="small text-muted mb-0">Rich espresso diluted with hot water.</p>
+                            </div>
+                            <div class="item-price-line flex-grow-1 mx-3"></div>
+                            <div class="item-price fw-bold">$4.50</div>
+                        </div>
+
+                        <div class="menu-item d-flex justify-content-between align-items-center mb-4">
+                            <div class="item-info">
+                                <h4 class="mb-1">Caramel Macchiato</h4>
+                                <p class="small text-muted mb-0">Espresso with steamed milk and caramel.</p>
+                            </div>
+                            <div class="item-price-line flex-grow-1 mx-3"></div>
+                            <div class="item-price fw-bold">$5.75</div>
+                        </div>
+
+                        <div class="menu-item d-flex justify-content-between align-items-center mb-4">
+                            <div class="item-info">
+                                <h4 class="mb-1">Cappuccino</h4>
+                                <p class="small text-muted mb-0">Perfect balance of espresso and foam.</p>
+                            </div>
+                            <div class="item-price-line flex-grow-1 mx-3"></div>
+                            <div class="item-price fw-bold">$5.00</div>
+                        </div>
+
+                    </div>
+                    <div class="text-end mt-4">
+                        <a href="#" class="btn btn-coffee">View Full Menu</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="text-box mb-5">
+                <h2 class="display-5 fw-bold mb-3 text-white">Visit Us</h2>
+                <p class="lead text-white-50 mt-4">We would love to welcome you. Visit us or get in touch anytime.</p>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <div class="contact-info-wrapper">
+                        <div class="contact-item d-flex mb-4">
+                            <div class="icon-box me-3"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <h4>Address</h4>
+                                <p class="text-white-50">123 Coffee Street, Espresso District, Istanbul</p>
+                            </div>
+                        </div>
+                        <div class="contact-item d-flex mb-4">
+                            <div class="icon-box me-3"><i class="fas fa-phone-alt"></i></div>
+                            <div>
+                                <h4>Phone</h4>
+                                <p class="text-white-50">+90 212 123 45 67</p>
+                            </div>
+                        </div>
+                        <div class="contact-item d-flex mb-4">
+                            <div class="icon-box me-3"><i class="fas fa-clock"></i></div>
+                            <div>
+                                <h4>Opening Hours</h4>
+                                <p class="text-white-50">Mon–Fri: 08:00–22:00 | Sat–Sun: 09:00–23:00</p>
+                            </div>
+                        </div>
+                        <div class="contact-item d-flex mb-4">
+                            <div class="icon-box me-3"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <h4>E-mail</h4>
+                                <p class="text-white-50">hello@coffeehouse.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="map-container shadow-lg">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.288219463991!2d28.97194631541525!3d41.02565637929849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab9e7a775191f%3A0xed4994119e915891!2sGalata%20Kulesi!5e0!3m2!1str!2str!4v1625565544123!5m2!1str!2str"
+                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-5">
+                    <a href="#" class="logo mb-3 d-inline-block">Coffee House</a>
+                    <p class="text-white-50 w-75">Crafting the perfect cup of coffee since 1992. Experience the rich
+                        aroma and cozy atmosphere in the heart of the city.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <h5 class="fw-bold mb-4">Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">Our Story</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-4">Get In Touch</h5>
+                    <ul class="list-unstyled text-white-50">
+                        <li class="mb-2"><i class="fas fa-phone-alt me-2 color-primary"></i> +90 212 123 45 67</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2 color-primary"></i> hello@coffeehouse.com</li>
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2 color-primary"></i> 123 Coffee St,
+                            Istanbul</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="mt-5 border-white-50 opacity-25">
+
+            <div class="row mt-4 align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0 text-white-50 small">&copy; 2026 Coffee House. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0 text-white-50">Designed with <i class="fas fa-heart text-danger"></i> for Coffee
+                        Lovers</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

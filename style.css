@@ -1,0 +1,583 @@
+/* ==========================================================================
+   1. VARIABLES & RESET
+   ========================================================================== */
+:root {
+    /* Colors */
+    --primary-coffee: #D4A373;
+    --text-light: #FEFAE0;
+    --dark-coffee: #1B1212;
+    --bg-about: #A98467;
+
+    /* Fonts */
+    --font-heading: 'Lora', serif;
+    --font-body: 'Poppins', sans-serif;
+
+    /* Effects */
+    --transition: all 0.3s ease;
+}
+
+body {
+    margin: 0;
+    background-color: var(--dark-coffee);
+    color: var(--text-light);
+    font-family: var(--font-body);
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   2. TİPOGRAFİ (TYPOGRAPHY)
+   ========================================================================== */
+h1,
+h2,
+h3,
+h4,
+.logo {
+    font-family: var(--font-heading);
+    letter-spacing: 1px;
+}
+
+.display-4,
+.display-5 {
+    font-weight: 700;
+    font-style: italic;
+}
+
+.text-box p.lead {
+    font-size: 1.15rem;
+    opacity: 0.9;
+}
+
+/* ==========================================================================
+   3. COMPONENTS 
+   ========================================================================== */
+.btn-coffee {
+    background-color: var(--primary-coffee);
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    transition: var(--transition);
+}
+
+.btn-coffee:hover {
+    background-color: #bc8a5f;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+.border-top {
+    border-top: 1px solid rgba(254, 250, 224, 0.2) !important;
+}
+
+/* ==========================================================================
+   4. NAVBAR
+   ========================================================================== */
+.navbar-custom {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, transparent 100%);
+    padding: 1.5rem 0;
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--text-light) !important;
+    text-decoration: none;
+}
+
+.nav-link {
+    color: var(--text-light) !important;
+    font-weight: 500;
+    padding: 0.5rem 1.5rem !important;
+    transition: var(--transition);
+}
+
+.nav-link:hover {
+    color: var(--primary-coffee) !important;
+}
+
+/* ==========================================================================
+   LOGO DESIGN
+   ========================================================================== */
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 12px;
+    transition: var(--transition);
+}
+
+.logo-icon {
+    width: 45px;
+    height: 45px;
+    background-color: var(--primary-coffee);
+    color: var(--dark-coffee);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    font-size: 1.4rem;
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+    /* Geometrik gölge */
+    transition: var(--transition);
+}
+
+.logo-text {
+    font-family: var(--font-heading);
+    font-weight: 800;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    color: var(--text-light);
+    line-height: 1;
+}
+
+.logo-text span {
+    color: var(--primary-coffee);
+    display: block;
+    font-size: 0.8rem;
+    letter-spacing: 5px;
+    margin-top: 2px;
+    font-weight: 400;
+}
+
+/* Hover Etkisi */
+.logo-wrapper:hover .logo-icon {
+    transform: rotate(-10deg) scale(1.1);
+    background-color: var(--text-light);
+}
+
+.logo-wrapper:hover .logo-text {
+    color: var(--primary-coffee);
+}
+
+/* Order Button */
+
+.btn-coffee {
+    background-color: transparent;
+    color: var(--primary-coffee) !important;
+    border: 2px solid var(--primary-coffee);
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 0.9rem;
+    padding: 8px 22px;
+    border-radius: 50px;
+    border: 2px solid var(--primary-coffee);
+    background-color: rgba(212, 163, 115, 0.1);
+    color: var(--primary-coffee) !important;
+    backdrop-filter: blur(5px);
+    transition: all 0.4s ease;
+}
+
+.btn-coffee:hover {
+    background-color: var(--primary-coffee);
+    color: var(--dark-coffee) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px rgba(212, 163, 115, 0.2);
+}
+
+.btn-coffee:active {
+    transform: translateY(0);
+}
+
+/* ==========================================================================
+   5. HERO SECTION
+   ========================================================================== */
+.hero {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/coffee-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.hero h2 {
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* ==========================================================================
+   6. ABOUT SECTION
+   ========================================================================== */
+.about {
+    background-color: var(--bg-about);
+    padding: 100px 0;
+    min-height: 100vh;
+}
+
+.image-box {
+    position: relative;
+}
+
+.image-box img {
+    border: 10px solid #fff;
+    box-shadow: 20px 20px 0px var(--primary-coffee);
+    transition: var(--transition);
+    max-height: 600px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.image-box img:hover {
+    transform: rotate(-3deg);
+}
+
+/* ==========================================================================
+   7. WHY CHOOSE US SECTION
+   ========================================================================== */
+.why-choose {
+    background-color: var(--primary-coffee);
+    padding: 100px 0;
+}
+
+.flip-card {
+    background-color: transparent;
+    perspective: 1000px;
+    height: 350px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+/* Ön Yüz Tasarımı */
+.flip-card-front {
+    background-color: var(--text-light);
+    color: var(--dark-coffee);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.flip-card-front h5 {
+    color: var(--bg-about);
+    margin-bottom: 15px;
+}
+
+/* Arka Yüz Tasarımı */
+.flip-card-back {
+    background-color: var(--dark-coffee);
+    transform: rotateY(180deg);
+}
+
+.flip-card-back img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.flip-card-front i {
+    font-size: 2.5rem;
+    color: var(--primary-coffee);
+    display: block;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.flip-card:hover .flip-card-front i {
+    transform: scale(1.1);
+    transition: var(--transition);
+}
+
+.back-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background: rgba(27, 18, 18, 0.8);
+    color: var(--text-light);
+    text-align: center;
+    font-family: var(--font-heading);
+}
+
+/* ==========================================================================
+   8. MENU SECTION
+   ========================================================================== */
+.menu-section {
+    background-color: var(--dark-coffee);
+    color: var(--text-light);
+}
+
+.rounded-custom {
+    border-radius: 30px;
+}
+
+.menu-image-container {
+    position: relative;
+    height: 100%;
+}
+
+.menu-image-container img {
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid var(--primary-coffee);
+}
+
+.image-badge {
+    position: absolute;
+    top: 20px;
+    right: -20px;
+    background-color: var(--primary-coffee);
+    color: #fff;
+    padding: 10px 20px;
+    transform: rotate(5deg);
+    font-weight: bold;
+    box-shadow: 4px 4px 0px var(--dark-coffee);
+}
+
+/* Menü Elemanları */
+.menu-item h4 {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    color: var(--primary-coffee);
+}
+
+.item-price-line {
+    border-bottom: 1px dashed rgba(212, 163, 115, 0.3);
+    height: 1px;
+    margin-bottom: 5px;
+}
+
+.item-price {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    min-width: 60px;
+    text-align: right;
+}
+
+.text-muted {
+    color: var(--text-light) !important;
+}
+
+.menu-item {
+    transition: var(--transition);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.menu-item:hover {
+    background-color: rgba(212, 163, 115, 0.05);
+    transform: translateX(10px);
+}
+
+
+/* ==========================================================================
+   9. CONTACT SECTION
+   ========================================================================== */
+.contact {
+    background-color: #2a1f1f;
+    padding: 100px 0;
+    border-top: 1px solid rgba(212, 163, 115, 0.1);
+}
+
+/* Harita ve İkon Kutuları */
+.icon-box {
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-coffee);
+    color: var(--dark-coffee);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    flex-shrink: 0;
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.3);
+}
+
+/* Harita Çerçevesi - Boşluk Fix */
+.map-container {
+    border-radius: 30px;
+    overflow: hidden;
+    border: 3px solid var(--primary-coffee);
+    box-shadow: 15px 15px 0px rgba(0, 0, 0, 0.2);
+    line-height: 0;
+    font-size: 0;
+}
+
+.map-container iframe {
+    display: block;
+    width: 100%;
+    height: 450px;
+    border: none;
+    margin: 0;
+    padding: 0;
+    filter: grayscale(100%) invert(90%) contrast(90%);
+}
+
+/* ==========================================================================
+   10. FOOTER SECTION
+   ========================================================================== */
+.footer {
+    background-color: var(--dark-coffee);
+    border-top: 5px solid var(--primary-coffee);
+    color: var(--text-light);
+}
+
+.footer .logo {
+    font-size: 2rem;
+    color: var(--primary-coffee) !important;
+}
+
+.footer h5 {
+    color: var(--primary-coffee);
+    font-family: var(--font-heading);
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: var(--text-light);
+    text-decoration: none;
+    opacity: 0.7;
+    transition: var(--transition);
+}
+
+.footer-links a:hover {
+    opacity: 1;
+    color: var(--primary-coffee);
+    padding-left: 8px;
+}
+
+/* Sosyal Medya İkonları */
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-coffee);
+    color: var(--dark-coffee);
+    border-radius: 8px;
+    margin-right: 10px;
+    text-decoration: none;
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.3);
+    transition: var(--transition);
+}
+
+.social-icons a:hover {
+    transform: translateY(-5px);
+    background-color: var(--text-light);
+}
+
+.btn-geo {
+    background-color: var(--primary-coffee);
+    border: none;
+    padding: 10px 25px;
+    border-radius: 12px;
+    font-weight: bold;
+    color: var(--dark-coffee);
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+    transition: var(--transition);
+}
+
+.btn-geo:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.color-primary {
+    color: var(--primary-coffee);
+}
+
+.footer hr {
+    border-color: var(--primary-coffee) !important;
+}
+
+.footer-links a {
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+}
+
+/* =========================
+   RESPONSIVE (TABLET + MOBILE)
+   ========================= */
+
+@media (max-width: 991.98px) {
+
+    /* Navbar */
+    .navbar-collapse {
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 1rem;
+        border-radius: 8px;
+        margin-top: 10px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .nav-link {
+        text-align: center;
+        padding: 12px 0;
+    }
+
+    .navbar-nav .nav-item {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .navbar-nav .nav-item:last-child {
+        border-bottom: none;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: 80vh;
+        padding: 40px 0;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .hero h6 {
+        font-size: 1rem;
+    }
+
+    /* About */
+    .about {
+        padding: 60px 0;
+    }
+}
+
+/* =========================
+   EXTRA SMALL DEVICES
+   ========================= */
+
+@media (max-width: 576px) {
+
+    .hero h2 {
+        font-size: 1.75rem;
+    }
+
+    .hero h6 {
+        font-size: 0.95rem;
+    }
+
+    .about {
+        padding: 40px 0;
+    }
+}
